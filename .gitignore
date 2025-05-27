@@ -1,0 +1,12 @@
+.idea/
+.vscode/
+__debug_*
+
+
+# pyenv
+.python-version
+.venv/
+# bytecode
+__pycache__
+
+.DS_Store
