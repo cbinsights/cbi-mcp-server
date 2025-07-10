@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/cbinsights-cbi-mcp-server-badge.png)](https://mseep.ai/app/cbinsights-cbi-mcp-server)
+
 # CB Insights MCP Server
 
 The CBI MCP Server provides an interface for developers to interact with CB Insights ChatCBI LLM through AI Agents.
