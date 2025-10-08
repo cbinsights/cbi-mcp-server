@@ -5,30 +5,27 @@ The CBI MCP Server provides an interface for developers to interact with CB Insi
 ## Tools
 
 ### ChatCBI
-- Sends a message from an agent to our AI chatbot and returns the response
+Send a message from an agent to ChatCBI and return the response.
 - Input parameters:
-  - `message`: 
-  - `chatID`: (optional) The unique id of an existing ChatCBI session. Used for continuity in a conversation. If not provided, a new ChatCBI session will be created
-- Returns object containing the following fields:
-  - `chatID`: Unique id of current ChatCBI session
-  - `message`: ChatCBI message generated in response to the message send in the input.
-  - `RelatedContent`: Content that is related to the content returned
-  - `Sources`: Supporting sources for the message content returned 
-  - `Suggestions` Suggested prompts to further explore the subject matter
-- For more information, check the [ChatCBI Docs](https://api-docs.cbinsights.com/portal/docs/api#tag/ChatCBI)
+  - `message`: The content of your message to ChatCBI
+  - `chatID`(optional): A unique identifier for the chat session, obtained from a previous response. If included, the conversation is continued. Otherwise, a new conversation is started.
+- Returns JSON object containing the following fields:
+  - `chatID`: Identifies the conversation. If chatID was provided in the request, this will be the same.
+  - `message`: ChatCBI response to the message.
+  - `relatedContent`: List of related references.
+  - `sources`: List of sources used to generate the response.
+  - `suggestions`: List of suggested follow-up questions.
+  - `title`: Title of the chat
+- For more information see [Using ChatCBI](https://api-docs.cbinsights.com/portal/docs/CBI-API/chatcbi)
 
 ## Setup
 The CBI MCP Server uses [uv](https://docs.astral.sh/uv/getting-started/installation/) to manage the project. 
 
-The default port is `8000`, but can be modified by updating the `CBI_MCP_PORT` environment variable in the `.env` file. 
-
-The timeout for requests can also be modified via the `CBI_MCP_TIMEOUT` variable in the `.env` file.
-
-### Authentication
-
-Documentation on how CB Insights APIs are authenticated can be found [here](https://api-docs.cbinsights.com/portal/docs/CBI-API/Authentication)
-
-The server uses the `CBI_CLIENT_ID` and `CBI_CLIENT_SECRET` environment variables set in the `.env` file to authorize requests.
+Environment variables are set via the .env file:
+- `CBI_CLIENT_ID` & `CBI_CLIENT_SECRET` OAuth Client ID and Secret
+  - see [CB Insights API Authentication](https://api-docs.cbinsights.com/portal/docs/CBI-API/Authentication) for usage and how to obtain them
+- `CBI_MCP_TIMEOUT` (default: 120)
+- `CBI_MCP_PORT` (default: 8000)
 
 ## Usage
 

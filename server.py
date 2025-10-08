@@ -46,6 +46,7 @@ def get_auth_token() -> str:
 @mcp.tool(name="ChatCBI",
           description="When using this tool, provide clear, specific queries for the best results. You can continue conversations with ChatCBI by including the chat ID from previous interaction.",
           annotations=ToolAnnotations(title="Chat with CBI", readOnlyHint=True, openWorldHint=True),
+          structured_output=False,
           )
 def chat_with_cbi(message: str, chat_id: Optional[str] = None) -> {}:
     token = get_auth_token()
