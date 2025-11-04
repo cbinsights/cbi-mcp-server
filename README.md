@@ -2,6 +2,10 @@
 
 The CBI MCP Server provides an interface for developers to interact with CB Insights ChatCBI LLM through AI Agents.
 
+<a href="https://glama.ai/mcp/servers/@cbinsights/cbi-mcp-server">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@cbinsights/cbi-mcp-server/badge" alt="CB Insights Server MCP server" />
+</a>
+
 ## Tools
 
 ### ChatCBI
