@@ -1,5 +1,7 @@
 # CB Insights MCP Server
 
+> _**Deprecation notice:** This repository, serving as an example implementation of a simple self-hosted MCP server that acts as a pass-through to the CB Insights API, is deprecated as of January 2026. CB Insights is pleased to offer a fully supported MCP server at [mcp.cbinsights.com](https://mcp.cbinsights.com), which can be invoked programmatically or through clients like ChatGPT, Claude, and Microsoft Copilot._
+
 The CBI MCP Server provides an interface for developers to interact with CB Insights ChatCBI LLM through AI Agents.
 
 ## Tools
