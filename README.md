@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/cbinsights-cbi-mcp-server-badge.png)](https://mseep.ai/app/cbinsights-cbi-mcp-server)
+
 # CB Insights MCP Server
 
 > _**Deprecation notice:** This repository, serving as an example implementation of a simple self-hosted MCP server that acts as a pass-through to the CB Insights API, is deprecated as of January 2026. CB Insights is pleased to offer a fully supported MCP server at [mcp.cbinsights.com](https://mcp.cbinsights.com), which can be invoked programmatically or through clients like ChatGPT, Claude, and Microsoft Copilot._
